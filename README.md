@@ -1,4 +1,4 @@
-# ⚓ opsilaaan
+# ⚓ opslaan
 **Anchor your conversations.**
 
 **opsilaaan** is a lightweight browser extension built **exclusively for ChatGPT** that helps you **anchor, pin, and navigate important parts of long conversations**.
