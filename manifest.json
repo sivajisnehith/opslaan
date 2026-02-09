@@ -1,0 +1,27 @@
+{
+    "manifest_version":3,
+    "name":"Opslaan",
+    "version":"1.0.2",
+    "description":"opsilaaan is a lightweight browser extension built exclusively for ChatGPT that helps you anchor, pin, and navigate important parts of long conversations.",
+    "permissions": ["scripting", "tabs","storage"],
+    "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":"icon.png"
+    },
+    "content_scripts":[
+        {
+            "matches":[ 
+                "https://chat.openai.com/*",
+                "https://chatgpt.com/*"
+            ],
+            "js":["content.js"]
+        }
+    ]
+}

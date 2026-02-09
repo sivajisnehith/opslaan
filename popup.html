@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html, body {
+            width: 260px;
+            height: 550px;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: linear-gradient(135deg, #1d1b20, #2a2438, #1f1d2b);
+            color: white;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            padding: 18px;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3 {
+            color: #d0bcff;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+
+        .rule {
+            display: flex;
+            align-items: center;
+            margin: 6px 0;
+            padding: 10px 12px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+        }
+
+        .emoji {
+            font-size: 20px;
+            margin-right: 12px;
+        }
+
+        .label {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        .cta-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .cta-text {
+            font-size: 14px;
+            font-weight: 600;
+            background: linear-gradient(90deg, #ffdd00, #ff6a00, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .insta-link {
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .unlock-btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            background: linear-gradient(135deg, #ff0066, #ff4da6);
+            color: white;
+            cursor: pointer;
+        }
+        .insta-link {
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 10px 0;
+    
+    /* Typography */
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    
+    /* Elegant Dark Background */
+    background: #1d1b20; 
+    color: #d0bcff !important; /* Matches your M3 primary purple */
+    
+    /* Subtle Gradient Border */
+    border: 1.5px solid;
+    border-image: linear-gradient(90deg, #ffdd00, #ff6a00, #ff00ff) 1;
+    
+    /* Shadow instead of Glow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.insta-link:hover {
+    background: #252329; /* Slightly lighter on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Subtle text glow on hover */
+    text-shadow: 0 0 8px rgba(208, 188, 255, 0.4);
+}
+        .unlock-btn.unlocked {
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            cursor: default;
+        }
+
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 11px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3>⚓ Anchor Rules</h3>
+
+        <div class="rule"><span class="emoji">🔵</span><span class="label">1 Bookmark</span></div>
+        <div class="rule"><span class="emoji">🟢</span><span class="label">2 Bookmarks</span></div>
+        <div class="rule"><span class="emoji">🔴</span><span class="label">3 Bookmarks</span></div>
+        <div class="rule"><span class="emoji">🟠</span><span class="label">4 Bookmarks</span></div>
+        <div class="rule"><span class="emoji">🟣</span><span class="label">5 And more Bookmarks</span></div>
+        <div class="cta-container">
+            <div class="cta-text">To get more bookmarks, follow us on instagram by clicking:</div>
+            <a href="https://www.instagram.com/sivaji_snehith/" target="_blank" class="insta-link">
+                @sivaji_snehith
+            </a>
+        </div>
+
+        <button id="followbutton" class="unlock-btn">
+            I have followed ✅
+        </button>
+         <script src="popup.js"></script>
+        <div class="footer">Clean • Minimal • Focused</div>
+    </div>
+</body>
+</html>
