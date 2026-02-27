@@ -82,4 +82,4 @@ All rights reserved by the author.
 
 ---
 
-**opsilaaan — Anchor your conversations.**
+**opslaaan — Anchor your conversations.**
