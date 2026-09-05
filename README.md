@@ -5,6 +5,8 @@
 
 When ChatGPT chats become lengthy and hard to manage, opsilaaan gives you structure — so you can jump back to key points instantly without endless scrolling.
 
+
+**Note: Guys This is actually not gonna work now chatgpt has recognized our work and then they have actually built thier inbuilt feature by basically providing a side nav bar which actually provides us to go to what ever messages which we actually need. Thanks for using our extension till now but now its time to end up this...**
 ---
 
 ## ✨ Features
